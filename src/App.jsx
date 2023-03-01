@@ -108,7 +108,7 @@ function App() {
 
                 <Header onClickCart={() => setcartOpened(true)} />
 
-                <Route path="/" exact>
+                <Route path="" exact>
                     <Home
                         searchValue={searchValue}
                         onChangeSearchInput={handleChangeSearchInput}
@@ -116,11 +116,11 @@ function App() {
                         isLoading={isLoading}
                     />
                 </Route>
-                <Route path="/favorites" exact>
+                <Route path="favorites" exact>
                     <Favorites />
                 </Route>
 
-                <Route path="/orders" exact>
+                <Route path="orders" exact>
                     <Orders />
                 </Route>
             </div>
