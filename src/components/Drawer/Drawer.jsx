@@ -52,7 +52,7 @@ const Drawer = ({ isOpened, onItemRemove }) => {
                     <img
                         onClick={() => setcartOpened(false)}
                         className=" cu-p"
-                        src="/img/btn-remove.svg"
+                        src="img/btn-remove.svg"
                         alt="Remove"
                     />
                 </h2>
@@ -77,7 +77,7 @@ const Drawer = ({ isOpened, onItemRemove }) => {
                                     <img
                                         onClick={() => onItemRemove(cartItem)}
                                         className="removeBtn"
-                                        src="/img/btn-remove.svg"
+                                        src="img/btn-remove.svg"
                                         alt="Remove"
                                     />
                                 </div>
@@ -97,13 +97,13 @@ const Drawer = ({ isOpened, onItemRemove }) => {
                                 </li>
                             </ul>
                             <button onClick={handleClickOrder} className="greenButton">
-                                Сheckout <img src="/img/arrow.svg" alt="Arrow" />
+                                Сheckout <img src="img/arrow.svg" alt="Arrow" />
                             </button>
                         </div>
                     </>
                 ) : (
                     <Info
-                        image={isOrderCompleted ? "/img/complete-order.jpg" : "/img/empty-cart.jpg"}
+                        image={isOrderCompleted ? "img/complete-order.jpg" : "img/empty-cart.jpg"}
                         title={isOrderCompleted ? "Order is processed" : "Cart is empty"}
                         description={
                             isOrderCompleted

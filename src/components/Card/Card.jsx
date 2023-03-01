@@ -37,7 +37,7 @@ const Card = ({ id, name, price, imgUrl, loading = false }) => {
                 <>
                     <div className={styles.favorite} onClick={handleClickFavorite}>
                         <img
-                            src={handleAddedToFavorite(id) ? "/img/liked.svg" : "/img/heart.svg"}
+                            src={handleAddedToFavorite(id) ? "img/liked.svg" : "img/heart.svg"}
                             alt="Unliked"
                         />
                     </div>
@@ -54,7 +54,7 @@ const Card = ({ id, name, price, imgUrl, loading = false }) => {
                             width={32}
                             height={32}
                             src={
-                                handleAddedToCart(id) ? "/img/btn-checked.svg" : "/img/btn-plus.svg"
+                                handleAddedToCart(id) ? "img/btn-checked.svg" : "img/btn-plus.svg"
                             }
                             alt="add to cart"
                         />
